@@ -9,7 +9,7 @@ const Header = () => {
     <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center animate-fade-in">
       <div className="flex items-center gap-2">
         <Gamepad className="h-6 w-6 text-mbti-purple" />
-        <Link to="/" className="text-2xl font-bold gradient-text">Typology</Link>
+        <Link to="/" className="text-2xl font-bold gradient-text">Personality Quest</Link>
       </div>
       <nav className="hidden md:flex items-center gap-6">
         <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">

@@ -15,7 +15,7 @@ const Hero = () => {
           Discover Your <span className="gradient-text">Personality Type</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
-          Who you are is waiting to be defined. What does ‘you’ really mean? 
+          Ready to unlock the secrets of your personality? Take our fun personality quiz and find out who you really are! 🎮
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in [animation-delay:400ms]">
           <Button size="lg" className="glass gradient-bg text-white group">

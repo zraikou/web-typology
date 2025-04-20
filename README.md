@@ -1,16 +1,22 @@
-# Personality Test
+# Welcome to your Lovable project
 
 ## Project info
 
-**URL**: https://zraikou.github.io/web-typology/
+**URL**: https://lovable.dev/projects/5da70497-951a-4822-a95d-98dfcf14b72b
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/5da70497-951a-4822-a95d-98dfcf14b72b) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -18,10 +24,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone https://github.com/zraikou/web-typology.git
+git clone <YOUR_GIT_URL>
 
 # Step 2: Navigate to the project directory.
-cd web-typology
+cd <YOUR_PROJECT_NAME>
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -56,9 +62,12 @@ This project is built with:
 
 ## How can I deploy this project?
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. Any push to the main branch will trigger a new deployment.
+Simply open [Lovable](https://lovable.dev/projects/5da70497-951a-4822-a95d-98dfcf14b72b) and click on Share -> Publish.
 
-To deploy manually:
-1. Make your changes
-2. Commit and push to the main branch
-3. GitHub Actions will automatically build and deploy to GitHub Pages
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

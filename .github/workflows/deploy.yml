@@ -37,6 +37,7 @@ jobs:
       - name: Build
         env:
           NODE_ENV: production
+          VITE_BASE_URL: /web-typology/
         run: |
           npm run build
           cp dist/index.html dist/404.html
@@ -45,6 +46,8 @@ jobs:
         run: |
           echo "Listing build directory contents:"
           ls -la dist/
+          echo "Assets directory contents:"
+          ls -la dist/assets || echo "No assets directory found"
           echo "Index.html contents:"
           cat dist/index.html
         

@@ -1,4 +1,3 @@
-
 export interface QuizQuestion {
   id: number;
   text: string;
@@ -140,6 +139,150 @@ export const quizQuestions: QuizQuestion[] = [
       { id: "12c", text: "Neutral", dimension: "T" },
       { id: "12d", text: "Disagree", dimension: "F" },
       { id: "12e", text: "Strongly Disagree", dimension: "F" }
+    ]
+  },
+  {
+    id: 13,
+    text: "In group discussions, you tend to:",
+    options: [
+      { id: "13a", text: "Speak first and think later", dimension: "E" },
+      { id: "13b", text: "Think first and speak later", dimension: "I" }
+    ]
+  },
+  {
+    id: 14,
+    text: "When solving problems, you prefer to:",
+    options: [
+      { id: "14a", text: "Follow tried and tested methods", dimension: "S" },
+      { id: "14b", text: "Try new, innovative approaches", dimension: "N" }
+    ]
+  },
+  {
+    id: 15,
+    text: "When making decisions, you primarily consider:",
+    options: [
+      { id: "15a", text: "Objective facts and logic", dimension: "T" },
+      { id: "15b", text: "People's feelings and harmony", dimension: "F" }
+    ]
+  },
+  {
+    id: 16,
+    text: "Your gaming style is usually:",
+    options: [
+      { id: "16a", text: "Following a clear strategy", dimension: "J" },
+      { id: "16b", text: "Going with the flow", dimension: "P" }
+    ]
+  },
+  {
+    id: 17,
+    text: "At parties, you typically:",
+    options: [
+      { id: "17a", text: "Interact with many different people", dimension: "E" },
+      { id: "17b", text: "Stick with a few close friends", dimension: "I" }
+    ]
+  },
+  {
+    id: 18,
+    text: "You prefer games that:",
+    options: [
+      { id: "18a", text: "Have clear rules and objectives", dimension: "S" },
+      { id: "18b", text: "Allow for creative interpretation", dimension: "N" }
+    ]
+  },
+  {
+    id: 19,
+    text: "In team games, you focus more on:",
+    options: [
+      { id: "19a", text: "Winning and achievement", dimension: "T" },
+      { id: "19b", text: "Team harmony and fun", dimension: "F" }
+    ]
+  },
+  {
+    id: 20,
+    text: "When starting a new game, you prefer to:",
+    options: [
+      { id: "20a", text: "Read all tutorials first", dimension: "J" },
+      { id: "20b", text: "Jump in and figure it out", dimension: "P" }
+    ]
+  },
+  {
+    id: 21,
+    text: "You find more energy in:",
+    options: [
+      { id: "21a", text: "Group activities and social events", dimension: "E" },
+      { id: "21b", text: "Solo activities and quiet time", dimension: "I" }
+    ]
+  },
+  {
+    id: 22,
+    text: "You are more interested in:",
+    options: [
+      { id: "22a", text: "What is actual and present", dimension: "S" },
+      { id: "22b", text: "What is possible and future", dimension: "N" }
+    ]
+  },
+  {
+    id: 23,
+    text: "In conflicts, you tend to:",
+    options: [
+      { id: "23a", text: "Seek logical solutions", dimension: "T" },
+      { id: "23b", text: "Consider everyone's feelings", dimension: "F" }
+    ]
+  },
+  {
+    id: 24,
+    text: "Your room organization is usually:",
+    options: [
+      { id: "24a", text: "Neat and structured", dimension: "J" },
+      { id: "24b", text: "Flexible and adaptable", dimension: "P" }
+    ]
+  },
+  {
+    id: 25,
+    text: "In conversations, you often:",
+    options: [
+      { id: "25a", text: "Speak more than listen", dimension: "E" },
+      { id: "25b", text: "Listen more than speak", dimension: "I" }
+    ]
+  },
+  {
+    id: 26,
+    text: "You are more drawn to:",
+    options: [
+      { id: "26a", text: "Practical skills and experiences", dimension: "S" },
+      { id: "26b", text: "Abstract theories and concepts", dimension: "N" }
+    ]
+  },
+  {
+    id: 27,
+    text: "When giving feedback, you tend to be:",
+    options: [
+      { id: "27a", text: "Direct and objective", dimension: "T" },
+      { id: "27b", text: "Tactful and supportive", dimension: "F" }
+    ]
+  },
+  {
+    id: 28,
+    text: "Your calendar is typically:",
+    options: [
+      { id: "28a", text: "Well-planned and organized", dimension: "J" },
+      { id: "28b", text: "Flexible and spontaneous", dimension: "P" }
+    ]
+  },
+  {
+    id: 29,
+    text: "You prefer working:",
+    options: [
+      { id: "29a", text: "In a team environment", dimension: "E" },
+      { id: "29b", text: "Independently", dimension: "I" }
+    ]
+  },
+  {
+    id: 30,
+    text: "You are more likely to trust:",
+    options: [
+      { id: "30a", text: "Your direct experiences", dimension: "S" },
+      { id: "30b", text: "Your gut feelings", dimension: "N" }
     ]
   }
 ];

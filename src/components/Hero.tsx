@@ -20,12 +20,11 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in [animation-delay:400ms]">
           <Button size="lg" className="glass gradient-bg text-white group">
             <Link to="/quiz" className="flex items-center gap-2">
-              Start Game
-              <Gamepad className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              Start
             </Link>
           </Button>
           <Button variant="outline" size="lg" className="glass">
-            <Link to="/about">How to Play</Link>
+            <Link to="/about">How to Use</Link>
           </Button>
         </div>
       </div>

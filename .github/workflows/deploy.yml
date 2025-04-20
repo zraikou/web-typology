@@ -36,6 +36,11 @@ jobs:
       - name: Build
         run: npm run build
         
+      - name: Debug Build Output
+        run: |
+          echo "Listing build directory contents:"
+          ls -la dist/
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
         

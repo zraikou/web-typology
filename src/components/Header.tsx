@@ -16,7 +16,7 @@ const Header = () => {
           Home
         </Link>
         <Link to="/about" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-          How to Play
+          How to Use
         </Link>
         <Button variant="outline" className="glass hover:bg-white/80 transition-all duration-300">
           <Link to="/quiz">Start</Link>

@@ -2,27 +2,30 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { Gamepad, Puzzle } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center items-center px-4 md:px-12 py-24">
       <div className="max-w-3xl mx-auto text-center space-y-6">
+        <div className="flex justify-center mb-4">
+          <Puzzle className="w-16 h-16 text-mbti-purple animate-pulse-soft" />
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight animate-fade-in">
           Discover Your <span className="gradient-text">Personality Type</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
-          Take our professional MBTI assessment and gain valuable insights into how you perceive the world and make decisions.
+          Ready to unlock the secrets of your personality? Take our fun personality quiz and find out who you really are! 🎮
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in [animation-delay:400ms]">
           <Button size="lg" className="glass gradient-bg text-white group">
             <Link to="/quiz" className="flex items-center gap-2">
-              Begin Assessment
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              Start Game
+              <Gamepad className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
           <Button variant="outline" size="lg" className="glass">
-            <Link to="/about">Learn More</Link>
+            <Link to="/about">How to Play</Link>
           </Button>
         </div>
       </div>

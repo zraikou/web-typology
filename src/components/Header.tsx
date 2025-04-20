@@ -19,7 +19,7 @@ const Header = () => {
           How to Play
         </Link>
         <Button variant="outline" className="glass hover:bg-white/80 transition-all duration-300">
-          <Link to="/quiz">Start Game</Link>
+          <Link to="/quiz">Start</Link>
         </Button>
       </nav>
       <Button variant="outline" className="md:hidden glass hover:bg-white/80 transition-all duration-300">

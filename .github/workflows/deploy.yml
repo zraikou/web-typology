@@ -31,15 +31,22 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: npm install
-        
+        run: |
+          npm ci
+          
       - name: Build
-        run: npm run build
+        env:
+          NODE_ENV: production
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
         
       - name: Debug Build Output
         run: |
           echo "Listing build directory contents:"
           ls -la dist/
+          echo "Index.html contents:"
+          cat dist/index.html
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -47,7 +54,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: 'dist'
           
       - name: Deploy to GitHub Pages
         id: deployment

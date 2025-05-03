@@ -1,4 +1,3 @@
-
 // Quiz Data
 const quizQuestions = [
   {
@@ -540,6 +539,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedOptions = {};
     const nextButton = document.getElementById('next-button');
     const progressBar = document.getElementById('progress-bar');
+    const prevButton = document.getElementById('prev-button');
     
     // Set up radio button event listeners
     document.querySelectorAll('input[name="answer"]').forEach(radio => {
@@ -554,7 +554,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (selectedOption) {
         selectedOptions[currentQuestionIndex] = {
           questionId: quizQuestions[currentQuestionIndex].id,
-          optionId: selectedOption.value,
+          optionId: selectedOption.id,
           dimension: selectedOption.value
         };
         
@@ -569,10 +569,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
     
+    // Set up previous button event listener
+    prevButton.addEventListener('click', function() {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        updateQuestion();
+      }
+    });
+    
     function updateQuestion() {
       const question = quizQuestions[currentQuestionIndex];
       const questionText = document.getElementById('question-text');
       const optionsContainer = document.getElementById('options-container');
+      optionsContainer.className = 'space-y-8';
       const progressPercentage = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
       
       // Update progress
@@ -608,6 +617,23 @@ document.addEventListener('DOMContentLoaded', function() {
           nextButton.classList.remove('disabled');
         });
       });
+      
+      // Show/hide Previous button
+      if (currentQuestionIndex === 0) {
+        prevButton.style.display = 'none';
+      } else {
+        prevButton.style.display = '';
+      }
+      
+      // Restore selected answer if available
+      const selected = selectedOptions[currentQuestionIndex];
+      if (selected) {
+        const radio = document.getElementById(selected.optionId);
+        if (radio) {
+          radio.checked = true;
+          nextButton.classList.remove('disabled');
+        }
+      }
     }
     
     function calculateResults() {

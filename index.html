@@ -1,26 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>archetype-glimpse-site</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Typology - Personality Test</title>
+    <meta name="description" content="Discover your personality type with our MBTI assessment" />
+    <meta name="author" content="John Rico B. Tolentino" />
 
-    <meta property="og:title" content="archetype-glimpse-site" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Typology - Personality Test" />
+    <meta property="og:description" content="Discover your personality type with our MBTI assessment" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header class="w-full py-4 px-6 md:px-12 flex justify-between items-center animate-fade-in">
+        <div class="flex items-center gap-2">
+          <svg class="h-6 w-6 text-mbti-purple" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="11" width="12" height="8" rx="2" />
+            <rect x="8" y="5" width="8" height="8" rx="1" />
+            <line x1="12" y1="5" x2="12" y2="1" />
+            <path d="M12 16a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+          </svg>
+          <a href="index.html" class="text-2xl font-bold gradient-text">Typology</a>
+        </div>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            Home
+          </a>
+          <a href="about.html" class="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            How to Use
+          </a>
+          <a href="quiz.html" class="button button-outline glass hover:bg-white/80 transition-all duration-300">
+            Start
+          </a>
+        </nav>
+        <a href="quiz.html" class="md:hidden button button-outline glass hover:bg-white/80 transition-all duration-300">
+          Play
+        </a>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="min-h-[80vh] flex flex-col justify-center items-center px-4 md:px-12 py-24">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+          <div class="flex justify-center mb-4">
+            <svg class="w-16 h-16 text-mbti-purple animate-pulse-soft" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z" />
+            </svg>
+          </div>
+          <h1 class="text-4xl md:text-6xl font-bold tracking-tight animate-fade-in">
+            Discover Your <span class="gradient-text">Personality Type</span>
+          </h1>
+          <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style="animation-delay: 200ms">
+            Who you are is waiting to be defined. What does 'you' really mean? 
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in" style="animation-delay: 400ms">
+            <a href="quiz.html" class="button gradient-bg text-white group">
+              Start
+            </a>
+            <a href="about.html" class="button button-outline glass">
+              How to Use
+            </a>
+          </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-transparent to-background pointer-events-none -z-10"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35rem] h-[35rem] rounded-full bg-mbti-purple/10 blur-3xl -z-10 animate-pulse-soft"></div>
+        <div class="absolute top-1/3 left-1/4 w-[25rem] h-[25rem] rounded-full bg-mbti-blue/10 blur-3xl -z-10 animate-pulse-soft" style="animation-delay: 1s"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-[20rem] h-[20rem] rounded-full bg-mbti-teal/10 blur-3xl -z-10 animate-pulse-soft" style="animation-delay: 2s"></div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="w-full py-8 px-6 md:px-12 mt-auto border-t border-border/40">
+        <div class="max-w-7xl mx-auto text-center">
+          <div class="mt-8 pt-4 border-t border-border/40">
+            <p class="text-xs text-muted-foreground mt-2">Created by John Rico B. Tolentino</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

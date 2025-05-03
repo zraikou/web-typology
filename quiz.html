@@ -38,8 +38,8 @@
       <main class="flex-grow flex flex-col items-center justify-center py-12 px-4">
         <div class="container max-w-4xl">
           <div class="quiz-progress">
-            <div class="flex justify-between mb-2 text-sm">
-              <span class="text-muted-foreground">0% Completed</span>
+            <div class="flex flex-col sm:flex-row justify-between mb-2 text-sm">
+              <span class="text-muted-foreground mb-1 sm:mb-0">0% Completed</span>
               <span class="text-muted-foreground">Question 1 of 50</span>
             </div>
             <div class="w-full bg-muted/50 rounded-full h-2 overflow-hidden glass">
@@ -53,12 +53,12 @@
           
           <div class="w-full max-w-2xl mx-auto animate-scale-in" id="quiz-container">
             <div class="card glass">
-              <div class="card-content">
-                <div class="mb-8 text-center">
-                  <h2 class="text-2xl font-semibold mb-2" id="question-text">You prefer to spend your free time:</h2>
+              <div class="card-content p-4 sm:p-6">
+                <div class="mb-6 sm:mb-8 text-center">
+                  <h2 class="text-xl sm:text-2xl font-semibold mb-2" id="question-text">You prefer to spend your free time:</h2>
                 </div>
                 
-                <div class="space-y-4" id="options-container">
+                <div class="space-y-3 sm:space-y-4" id="options-container">
                   <div class="flex items-center space-x-3 p-3 rounded-md transition-colors hover:bg-white/30">
                     <input type="radio" name="answer" id="option-1" value="E" class="radio-input">
                     <label for="option-1" class="font-medium cursor-pointer flex-grow">
@@ -73,10 +73,10 @@
                   </div>
                 </div>
                 
-                <div class="flex justify-end mt-8">
+                <div class="flex justify-end mt-6 sm:mt-8">
                   <button 
                     id="next-button" 
-                    class="gradient-bg px-8 button disabled"
+                    class="gradient-bg px-6 sm:px-8 py-2 button disabled"
                   >
                     Next
                   </button>
